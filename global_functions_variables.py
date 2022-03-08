@@ -43,55 +43,25 @@ rename_usetype = {'SPS-District K-12' : 'K-12 School',
                   'Other - Restaurant/Bar' : 'Restaurant',
                   'Other - Entertainment/Public Assembly' : 'Social/Meeting Hall'}
 
-list_of_color = ['dimgrey', 'lightskyblue',  'cadetblue', 'chocolate', 'forestgreen', 'dimgrey', 'darkgoldenrod',
-                 'darkblue', 'darkcyan', 'darkgray', 'darkgreen', 'darkgrey', 'darkkhaki', 'darkmagenta',
+list_of_color =['tomato', 'lightcoral', 'darkblue', 'mediumvioletred','cadetblue',
+                'deeppink', 'saddlebrown','chocolate','dodgerblue','forestgreen',
+                'darkgoldenrod', 'darkyellow','darkgreen', 'darkkhaki', 'darkmagenta',
                  'darkolivegreen', 'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen', 'darkslateblue',
-                 'darkslategray', 'darkslategrey', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray',
-                 'dimgrey', 'dodgerblue', 'firebrick', 'floralwhite', 'forestgreen', 'gainsboro', 'ghostwhite', 'gold',
-                 'goldenrod', 'greenyellow', 'grey', 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki',
-                 'lavender', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan', 'orange', 'burlywood',
-                 'lightgoldenrodyellow', 'lightgray', 'lightgreen', 'lightgrey', 'lightpink', 'lightsalmon', 'lightseagreen',
-                 'lightskyblue', 'lightslategray', 'lightslategrey', 'lightsteelblue', 'lightyellow', 'limegreen', 'linen',
+                 'darkslategray', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray',
+                 'dodgerblue', 'firebrick', 'floralwhite', 'forestgreen', 'gainsboro', 'ghostwhite', 'gold',
+                 'goldenrod', 'greenyellow', 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki',
+                 'lavender', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcyan', 'orange', 'burlywood',
+                 'lightgoldenrodyellow', 'lightgray', 'lightgreen', 'lightpink', 'lightsalmon', 'lightseagreen',
+                 'lightskyblue', 'lightslategray', 'lightsteelblue', 'lightyellow', 'limegreen', 'linen',
                  'magenta', 'mediumaquamarine', 'mediumblue', 'mediumorchid', 'mediumpurple', 'mediumseagreen', 'cyan', 'teal', 
                  'mediumslateblue', 'mediumspringgreen', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream',
                  'mistyrose', 'moccasin', 'navajowhite', 'oldlace', 'olivedrab', 'orangered', 'orchid', 'palegoldenrod',
                  'palegreen', 'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'pink', 'plum',
                  'powderblue', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seagreen', 'seashell',
-                 'sienna', 'skyblue', 'slateblue', 'slategray', 'slategrey', 'snow', 'springgreen', 'steelblue', 'tan',
+                 'sienna', 'skyblue', 'slateblue', 'slategray', 'snow', 'springgreen', 'steelblue', 'tan',
                  'thistle', 'tomato', 'turquoise', 'violet', 'wheat', 'whitesmoke', 'yellowgreen', 'rebeccapurple', 'cornflowerblue']
 
-categories_tree = {
- 'meats': ['chicken-feet', 'charcuteries', 'pate-au-foie-de-canard', 'filet-de-boeuf', 'haggis', 'foies-gras','bison', 'ragout-de-boeuf', 'turkey-bacon', 'prepared-chicken', 'fresh-chicken', 'processed-meat', 'fish-meat-eggs'],
- 'fishes': ['harengs', 'tuna-steaks', 'tuna-steak'],
- 'cereals-and-their-products': ['flours', 'boulange', 'breaded-products', 'pates', 'crepes-and-galettes', 'pizza-dough', 'pastas'],
- 'beverages': ['vanilla-soymilk', 'pear-and-blackcurrant-juice', 'root-bier', 'thes-glaces', 'diet-colas', 'tea-drinks', 'jus-de-noix-de-coco', 'carbonated-soda-water', 'natural-spring-water', 'apple-and-pear-juices', 'juice-beverage', 'juice'],
- 'condiments': ['groceries', 'pickles', 'sauce-aux-piments', 'it:vinaigre-balsamique', 'sweeteners', 'whole-olives', 'hoisin-sauce', 'barbeque-sauce', 'asian-condiments', 'vinegars', 'spices', 'green-olives', 'vinaigre-balsamique'],    
- 'dietary-supplement': ['multivitamin-supplement'],
- 'vegetables': ['carrot-coriander-soup', 'salad', 'fruits-and-vegetables'],
- 'biscuits-and-cakes': ['pies', 'scottish-shortbread', 'sables'],
- 'meals': ['sandwiches', 'ramen', 'salades-composees', 'one-dish-meals'],
- 'seeds': ['pumpkin-seed-pecan'],
- 'sugary-snacks': ['breakfasts', 'lindt-sea-salt-chocolate', 'syrups', 'rice-candy', 'spreads', 'pates-a-tartiner-aux-noisettes-et-au-cacao', 'petit-dejeuners', 'pates-a-tartiner', 'caramel-popcorn', 'chocolats']
-    }
-
-evasive_categories =['desserts', "non-alimentaire", 'open-beauty-facts', 'non-food-products', "plant-based-foods-and-beverages", "plant-based-foods", 'canned-foods', 'non-food-products', "labeled-products", "frozen-foods", 'fresh-foods', "farming-products", "baby-foods", 'products-with-reduced-salt']            
-   
-#specify types to avoid DtypeWarning: Columns (...) have mixed types. Specify dtype option on import or set low_memory=False.
-var_dtype= {'code': 'str', 'created_t': 'str', 'last_modified_t': 'str', 'manufacturing_places': 'str',
-            'manufacturing_places_tags': 'str', 'emb_codes': 'str', 'emb_codes_tags': 'str', 'first_packaging_code_geo': 'str',
-            'cities': 'str', 'cities_tags': 'str', 'allergens': 'str', 'allergens_fr': 'str', 'traces': 'str',
-            'traces_tags': 'str', 'traces_fr': 'str', 'ingredients_from_palm_oil_tags': 'str'}
-
-#fields that are unrelated to our objective are manually determine 
-irrelevant_fields = ["code","url","creator","created_t","created_datetime","last_modified_t","last_modified_datetime",'cities'
-                 "brands", "brands_tags","countries","countries_fr","countries_tags","states","states_tags","states_fr",
-                  "serving_size","ingredients_that_may_be_from_palm_oil_n","ingredients_from_palm_oil_n","quantity",
-                  "packaging","packaging_tags","generic_name","origins","origins_tags","manufacturing_places",
-                  "manufacturing_places_tags","image_url","image_small_url","ingredients_from_palm_oil_tags",
-                  "ingredients_that_may_be_from_palm_oil_tags","emb_codes","emb_codes_tags","first_packaging_code_geo",
-                 "cities_tags","purchase_places","stores","brands", "additives_n", "nutrition-score-uk_100g","labels",
-                "categories","pnns_groups_1","pnns_groups_2","main_category"]
-
+    
 #######  Usefull global functions  ########
 def is_a_number(myVariable):
     if type(myVariable) == np.float64 or type(myVariable) == int \
@@ -113,57 +83,11 @@ def is_a_number(myVariable):
         print(type(myVariable))
         return False
 
-def add_error(id_product, field, error_type):
-    global wrong_filled_products
-    
-    if id_product in wrong_filled_products.keys():
-        if field in wrong_filled_products[id_product].keys():
-            wrong_filled_products[id_product][field].append(error_type)
-        else:
-            wrong_filled_products[id_product][field] = [error_type]
-    else:
-        wrong_filled_products[id_product]= {field : [error_type]}
-        
-def calcul_energy(fat, carb, protein):
-    #energy could be calculated like :
-    #Fat = 9 kcal/g (Cal/g) Carbohydrate = 4 kcal/g (Cal/g) Protein = 4 kcal/g (Cal/g)
-    #1000cal = 1 kcal = 1 Cal                 4184 J = 4.184 kJ = 1 Cal
-    #Fat = 9 kcal/g (Cal/g) Carbohydrate = 4 kcal/g (Cal/g) Protein = 4 kcal/g (Cal/g)
-    #Fat = 37,656 kJ/g           Carbohydrate = 16,736 kJ/g            Protein = 16,736 kJ/g
-    return ((carb+protein)*16.736)+(fat*37.656)
 
 def is_approx_to(value, wanted_value, approx):
     return value <= wanted_value*(1.0+approx) and value >= wanted_value*(1.0-approx)
 
-def rec_cat_research(cat_id):
-    if cat_id in list(categories_equivalent.keys()) :
-        return cat_id
-    else:
-        for key_cat in list(categories_equivalent.keys()) :
-            if key_cat in categories_tree.keys() and cat_id in categories_tree[key_cat]:
-                #print(f"from categories keys : {key_cat}")
-                return key_cat
-        for leaf in categories_tree.values() :
-            if cat_id in leaf:
-                branch = list(categories_tree.keys())[list(categories_tree.values()).index(leaf)] 
-                #print(f"from categories branchs : {branch}")
-                return rec_cat_research(branch)
-        return np.nan
-        
-def get_categorie(cat_string):
-    if len(cat_string) > 2 and cat_string[2]==':':  
-        cat_string = cat_string[3:].lower().replace(' ','-')
-    else:
-        cat_string = cat_string.lower().replace(' ','-')
-    if cat_string not in evasive_categories :
-        higher_cat = rec_cat_research(cat_string)
-        if pd.notnull(higher_cat):
-            return categories_equivalent[higher_cat]
-        else :
-            return np.nan
-    else :
-        return np.nan
-    
+
 def show_corr_matrix(corr):
     
     chart_corr = (corr.stack()
